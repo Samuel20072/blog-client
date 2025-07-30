@@ -1,7 +1,13 @@
-<header class="w-full h-10 p-10 border-1 flex justify-between items-center">
-  <nav>
+<header class="bg-white  px-6 py-4">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
     
-    <a routerLink="/">Inicio</a>
-    <a routerLink="/about">Acerca de</a>
-  </nav>
+    <!-- Logo -->
+    <app-logo-component></app-logo-component>
+
+    <!-- Navigation Links -->
+    <app-nav-component></app-nav-component>
+
+    <!-- Auth Buttons -->
+    <app-auth-buttons-component></app-auth-buttons-component>
+  </div>
 </header>
