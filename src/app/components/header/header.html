@@ -1,13 +1,17 @@
-<header class="bg-white  px-6 py-4">
+<header class="bg-white px-6 py-4">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
-    
+
     <!-- Logo -->
     <app-logo-component></app-logo-component>
 
     <!-- Navigation Links -->
     <app-nav-component></app-nav-component>
 
-    <!-- Auth Buttons -->
-    <app-auth-buttons-component></app-auth-buttons-component>
+    <!-- Auth Buttons + Logout -->
+    <div class="flex items-center gap-4">
+      <app-auth-buttons-component></app-auth-buttons-component>
+      <app-logout-button></app-logout-button>
+    </div>
+
   </div>
 </header>

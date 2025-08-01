@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // 👈 importa esto
 
 @Component({
   selector: 'app-button',
   standalone: true,
-  imports: [CommonModule], // 👈 esto es lo que soluciona el error
+  imports: [CommonModule, RouterModule], // 👈 agrega RouterModule aquí
   templateUrl: './buttons.html',
 })
 export class ButtonComponent {
@@ -12,4 +13,5 @@ export class ButtonComponent {
   @Input() bgColor: string = 'bg-gray-900';
   @Input() textColor: string = 'text-white';
   @Input() hoverBg: string = 'hover:bg-gray-700';
+  @Input() link: string = '/'; // 👈 agrega la propiedad del link
 }

@@ -1,14 +1,16 @@
-<div class="flex items-center space-x-4 text-sm font-medium">
+<div class="flex items-center space-x-4 text-sm font-medium" *ngIf="!isLoggedIn">
   <app-button
     [text]="'Iniciar sesión'"
     [bgColor]="'bg-white'"
     [textColor]="'text-gray-800'"
     [hoverBg]="'hover:text-blue-600'"
+    [link]="'/login'"
   ></app-button>
   <app-button
     [text]="'Registrarme'"
     [bgColor]="'bg-gray-900'"
     [textColor]="'text-white'"
     [hoverBg]="'hover:bg-gray-700'"
+     [link]="'/register'" 
   ></app-button>
 </div>
