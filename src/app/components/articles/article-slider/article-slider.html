@@ -1,0 +1,15 @@
+<swiper-container
+  slides-per-view="1"
+  autoplay-delay="3000"
+   [loop]="articles.length > 2"
+  navigation="true"
+  pagination="true"
+  class="w-full h-[350px]"
+>
+  <ng-container *ngFor="let article of articles">
+    <swiper-slide class="flex flex-col items-center justify-center bg-white p-4 shadow rounded-lg">
+      <img [src]="article.imageUrl" alt="article image" class="h-40 object-cover rounded mb-2" />
+      <h2 class="text-lg font-semibold text-center">{{ article.title }}</h2>
+    </swiper-slide>
+  </ng-container>
+</swiper-container>
