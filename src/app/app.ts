@@ -10,5 +10,5 @@ import { FooterComponent } from './components/footer/footer';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('blog-front');
+  protected readonly title = signal('blog');
 }
